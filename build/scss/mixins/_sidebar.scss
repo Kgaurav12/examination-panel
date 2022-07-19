@@ -3,10 +3,10 @@
 //
 
 // Sidebar Color
-@mixin sidebar-color($color) {
+@mixin sidebar-color() {
   .nav-sidebar > .nav-item {
     > .nav-link.active {
-      background-color: $color;
+      background-color: #343a40;
       color: color-yiq($color);
     }
   }

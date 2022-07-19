@@ -195,7 +195,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item menu-open">
-                <a href="#" style="background-color: #343a40;" class="nav-link active">
+                <a href="#"style="background-color: #343a40;" class="nav-link active">
                   <p>
                     STUDENT
                     <i class="right fas fa-angle-left"></i>
@@ -290,7 +290,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Add Questions</h1>
+            <h1 class="m-0">Add Student Detail</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -304,34 +304,37 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- /.content-header -->
     
     <!-- student detail from     -->
-    <form>
+    <form action="addstudent_db.php" method="post">
         <div class="form-group">
-          <label for="exampleInputEmail1">QUESTION</label>
-          <input type="PRN No" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="PRN NO">
+          <label for="exampleInputEmail1">PRN No</label>
+          <input type="PRN No" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="prn_no" placeholder="PRN NO">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">OPTION 1</label>
-          <input type="Name" class="form-control" id="exampleInputPassword1" placeholder="Name">
+          <label for="exampleInputPassword1">Name</label>                                                                                                   
+          <input type="Name" class="form-control" id="exampleInputPassword1"name="student_name" placeholder="Name">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">OPTION 2</label>
-          <input type="Email Id" class="form-control" id="exampleInputPassword1" placeholder="Email Id">
+          <label for="exampleInputPassword1">Email Id</label>
+          <input type="Email Id" class="form-control" id="exampleInputPassword1"name="student_email" placeholder="Email Id">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">OPTION 3</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1"name="prssword" placeholder="Password">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">OPTION 4</label>
-          <input type="Subject" class="form-control" id="exampleInputPassword1" placeholder="Subject">
+          <label for="exampleInputPassword1">dept</label>
+          <input type="Subject" class="form-control" id="exampleInputPassword1"name="dept placeholder="Subject">
         </div>
-       
+        <div class="form-group">
+          <label for="exampleInputPassword1">Mobile No</label>
+          <input type="Mobile No" class="form-control" id="exampleInputPassword1"name="prn_no" placeholder="Mobil No">
+        </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">A</label>
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="submit" class="btn btn-primary" value="Submit">
       </form>
 
 
